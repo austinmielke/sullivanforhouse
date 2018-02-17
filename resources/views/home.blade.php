@@ -15,26 +15,42 @@
 
 <body class="font-sans bg-white text-black">
 
-    <nav class="w-full py-3">
-        <div class="container mx-auto px-2">
-            <div class="flex flex-col sm:flex-row items-start">
-                <ul class="list-reset flex items-center">
-                    <li class="mr-3">
-                        <div class="container mx-auto px-2">
+        <div class="w-full bg-white shadow fixed pin-x pin-t">
+            <div class="container mx-auto bg-white px-2 py-3">
+                <div class="flex flex-col sm:flex-row items-start">
+                    <ul class="list-reset flex items-center justify-start">
+                        <li class="mr-3">
                             <a href="#" class="btn btn-orange">Contribute</a>
-                        </div>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-instagram fa-2x"></i></a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <nav class="w-full bg-white">
+        <div class="container mx-auto mt-12 px-2">
+            <div class="flex flex-col items-start md:flex-row ">
+                <ul class="list-reset flex align-center border-b-2 border-gray">
+                    <li class="mx-2">
+                        <a href="#" class="nav-link">Home</a>
                     </li>
-                    <li class="mr-3">
-                        <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <li class="mx-2">
+                        <a href="#" class="nav-link">About</a>
                     </li>
-                    <li class="mr-3">
-                        <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-instagram fa-2x"></i></a>
-                    </li>
-                    <li class="mr-3">
-                        <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <li class="mx-2">
+                        <a href="#" class="nav-link">Contact</a>
                     </li>
                 </ul>
-                <a href="#" class="mx-auto my-6 sm:ml-auto sm:mr-0 sm:my-0 sm:text-right"><img class="h-48 lg:h-64"src="{{ URL::asset('img/brand2.svg') }}" alt="Kelly Sullivan for House District 13 2018"></a>
+                <a href="#" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right"><img class="h-48 lg:h-64"src="{{ URL::asset('img/brand2.svg') }}" alt="Kelly Sullivan for House District 13 2018"></a>
             </div>
         </div>
     </nav>
@@ -46,6 +62,7 @@
     </section>
 
     <section class="py-4">
+        <h2 class="text-center text-3xl mb-4">Kelly's Vision</h2>
         <div class="container mx-auto px-2 sm:flex">
             <div class="sm:w-1/3">
                 <span class="mb-2 block text-center text-orange"><i class="far fa-handshake fa-5x"></i></span>
@@ -67,7 +84,7 @@
 
     <section class="py-4 w-full bg-teal text-white">
         <div class="container mx-auto px-2">
-            <h2 class="text-center text-3xl">Contact Kelly</h2>
+            <h2 class="text-center text-3xl">Join Kelly's Team</h2>
             <form class="md:w-1/2 mb-4 m-auto" action="{{ url('contact') }}" method="POST">
                 {{ csrf_field() }}
 
@@ -81,15 +98,12 @@
                     <input type="text" name="email" id="email" class="w-full h-10 p-2">
                 </div>
 
-                <div class="my-6">
-                    <label for="subject" class="block my-2 font-bold font-xl">Subject:</label>
-                    <input type="text" name="subject" id="subject" class="w-full h-10 p-2">
-                </div>
-
-                <div class="my-6">
-                    <label for="body" class="block my-2 font-bold font-xl">Message:</label>
-                    <textarea name="bodyMessage" id="bodyMessage" rows="5" class="w-full p-2"></textarea>
-                </div>
+                <ul>
+                    <li>Donate Your Time</li>
+                    <li>Request Yard Sign</li>
+                    <li>Host a House Party</li>
+                    <li>Other</li>
+                </ul>
 
                 @if (count($errors))
                     <div class="my-6">
@@ -101,7 +115,7 @@
                     </div>
                 @endif
 
-                <button class="btn btn-orange block m-auto">Send Message</button>
+                <button class="btn btn-orange block m-auto">Submit</button>
 
             </form>
         </div>
@@ -118,7 +132,7 @@
     <footer class="bg-teal text-white py-4">
         <div class="container mx-auto px-2 text-center">
             <span class="px-4 py-2 inline-block border-2 border-solid border-white uppercase">Paid for by Kelly Sullivan for House</span>
-            <span class="block my-2">Address</span>
+            <span class="block my-2 italic">1004 S. Dakota Ave., Sioux Falls, SD  57105</span>
             <span class="block my-2">&copy {{ date('Y') }} All rights reserved.</span>
             <span class="block my-2">Site by Austin Mielke.</span>
         </div>

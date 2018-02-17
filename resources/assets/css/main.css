@@ -41,8 +41,24 @@
     @apply .bg-orange-light;
 }
 
+.btn-teal {
+    @apply .bg-teal;
+}
+
+.btn-teal:hover {
+    @apply .bg-teal-light;
+}
+
 .form-label {
     @apply .block .my-2 .font-bold;
+}
+
+.nav-link {
+    @apply .text-orange .no-underline .text-3xl .uppercase .font-bold;
+}
+
+.nav-link:hover {
+    @apply .text-orange-light
 }
 
 @tailwind utilities;
