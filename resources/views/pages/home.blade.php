@@ -58,12 +58,29 @@
                         <input type="text" name="email" id="email" class="w-full h-10 p-2">
                     </div>
     
-                    <ul>
-                        <li>Donate Your Time</li>
-                        <li>Request Yard Sign</li>
-                        <li>Host a House Party</li>
-                        <li>Other</li>
-                    </ul>
+                    <div class="my-6">
+                        <fieldset>
+                            <div class="mb-2">
+                                <input type="checkbox" id="donateTime" name="volunteer" value="Donate Time">
+                                <label class="font-bold font-xl" for="donateTime">Donate Your Time</label>
+                            </div>
+
+                            <div class="mb-2">
+                                <input type="checkbox" id="yardSign" name="volunteer" value="newsletter">
+                                <label class="font-bold font-xl" for="yardSign">Request Yard Sign</label>
+                            </div>
+
+                            <div class="mb-2">
+                                <input type="checkbox" id="houseParty" name="volunteer" value="newsletter">
+                                <label class="font-bold font-xl" for="houseParty">Host A House Party</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="other" name="volunteer" value="newsletter">
+                                <label class="font-bold font-xl" for="other">Other</label>
+                            </div>
+                        </fieldset>
+                    </div>
     
                     @if (count($errors))
                         <div class="my-6">
