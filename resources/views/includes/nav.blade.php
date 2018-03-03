@@ -34,7 +34,17 @@
                 </li>
             </ul>
             <a href="#" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right">
-                <img class="h-48 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+
+                @if(Request::is('/'))
+
+                    <img class="h-48 lg:h-64 md:hidden"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+
+                @else
+
+                    <img class="h-48 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+
+                @endif
+
             </a>
         </div>
     </div>
