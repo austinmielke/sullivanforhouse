@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <div class="w-full">
-            <img class="overflow-hidden" src="{{ URL::asset('img/splash.jpg') }}" alt="Kelly Sullivan for Districxt 13 House">
+    <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover">
     </div>
 
     <div class="py-4">

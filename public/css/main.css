@@ -688,6 +688,10 @@ button,
   color: #459e9e;
 }
 
+.splash-bg {
+  background-image: url('/img/splash.jpg');
+}
+
 .container {
   width: 100%;
 }
@@ -1664,7 +1668,11 @@ button,
 }
 
 .h-half {
-  height: 50%;
+  height: 50vh;
+}
+
+.h-three-quarters {
+  height: 75vh;
 }
 
 .h-screen {
@@ -4106,7 +4114,11 @@ button,
   }
 
   .sm\:h-half {
-    height: 50%;
+    height: 50vh;
+  }
+
+  .sm\:h-three-quarters {
+    height: 75vh;
   }
 
   .sm\:h-screen {
@@ -6526,7 +6538,11 @@ button,
   }
 
   .md\:h-half {
-    height: 50%;
+    height: 50vh;
+  }
+
+  .md\:h-three-quarters {
+    height: 75vh;
   }
 
   .md\:h-screen {
@@ -8946,7 +8962,11 @@ button,
   }
 
   .lg\:h-half {
-    height: 50%;
+    height: 50vh;
+  }
+
+  .lg\:h-three-quarters {
+    height: 75vh;
   }
 
   .lg\:h-screen {
@@ -11366,7 +11386,11 @@ button,
   }
 
   .xl\:h-half {
-    height: 50%;
+    height: 50vh;
+  }
+
+  .xl\:h-three-quarters {
+    height: 75vh;
   }
 
   .xl\:h-screen {
