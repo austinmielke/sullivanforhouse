@@ -33,6 +33,10 @@
     @apply .px-4 .py-2 .font-bold .text-white .no-underline .rounded-lg;
 }
 
+.btn-lg {
+    @apply .px-6 .py-4 .text-xl;
+}
+
 .btn-orange {
     @apply .bg-orange;
 }
@@ -54,11 +58,11 @@
 }
 
 .nav-link {
-    @apply .text-orange .no-underline .text-3xl .uppercase .font-bold;
+    @apply .text-teal .no-underline .text-3xl .uppercase .font-bold;
 }
 
 .nav-link:hover {
-    @apply .text-orange-light
+    @apply .text-teal-light
 }
 
 @tailwind utilities;

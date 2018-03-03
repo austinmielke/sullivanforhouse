@@ -645,6 +645,14 @@ button,
   border-radius: .5rem;
 }
 
+.btn-lg {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
 .btn-orange {
   background-color: #c25229;
 }
@@ -669,7 +677,7 @@ button,
 }
 
 .nav-link {
-  color: #c25229;
+  color: #007a7a;
   text-decoration: none;
   font-size: 1.875rem;
   text-transform: uppercase;
@@ -677,7 +685,7 @@ button,
 }
 
 .nav-link:hover {
-  color: #c7613c;
+  color: #459e9e;
 }
 
 .container {
@@ -1653,6 +1661,10 @@ button,
 
 .h-full {
   height: 100%;
+}
+
+.h-half {
+  height: 50%;
 }
 
 .h-screen {
@@ -4093,6 +4105,10 @@ button,
     height: 100%;
   }
 
+  .sm\:h-half {
+    height: 50%;
+  }
+
   .sm\:h-screen {
     height: 100vh;
   }
@@ -6507,6 +6523,10 @@ button,
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-half {
+    height: 50%;
   }
 
   .md\:h-screen {
@@ -8925,6 +8945,10 @@ button,
     height: 100%;
   }
 
+  .lg\:h-half {
+    height: 50%;
+  }
+
   .lg\:h-screen {
     height: 100vh;
   }
@@ -11339,6 +11363,10 @@ button,
 
   .xl\:h-full {
     height: 100%;
+  }
+
+  .xl\:h-half {
+    height: 50%;
   }
 
   .xl\:h-screen {

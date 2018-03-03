@@ -13,10 +13,10 @@
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
 Route::get('/about', function () {
     return view('pages.about');
 });
 Route::get('/contact', function () {
-    return view('pages.home');
+    return view('pages.contact');
 });

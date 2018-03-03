@@ -22,18 +22,20 @@
 <nav class="w-full bg-white">
     <div class="container mx-auto mt-12 px-2">
         <div class="flex flex-col items-start md:flex-row ">
-            <ul class="list-reset flex align-center border-b-2 border-gray">
+            <ul class="list-reset flex align-center border-b-2 border-gray mb-4">
                 <li class="mx-2">
-                    <a href="#" class="nav-link">Home</a>
+                    <a href="/" class="nav-link">Home</a>
                 </li>
                 <li class="mx-2">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="/about" class="nav-link">About</a>
                 </li>
                 <li class="mx-2">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <a href="#" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right"><img class="h-48 lg:h-64"src="{{ URL::asset('img/brand2.svg') }}" alt="Kelly Sullivan for House District 13 2018"></a>
+            <a href="#" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right">
+                <img class="h-48 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+            </a>
         </div>
     </div>
 </nav>
