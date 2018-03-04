@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', '| About Kelly')
+
 @section('content')
 
     <section class="py-4 w-full bg-teal text-white">

@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', '| Let\'s Talk!')
+
 @section('content')
 
 <div class="w-full m-auto">
