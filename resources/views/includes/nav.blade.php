@@ -22,7 +22,7 @@
 <nav class="w-full bg-white">
     <div class="container mx-auto mt-12 px-2">
         <div class="flex flex-col items-start md:flex-row ">
-            <ul class="list-reset flex align-center border-b-2 border-gray mb-4">
+            <ul class="list-reset flex align-center mb-4">
                 <li class="mx-2">
                     <a href="/" class="nav-link">Home</a>
                 </li>

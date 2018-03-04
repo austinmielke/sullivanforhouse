@@ -4,7 +4,7 @@
 
     <section class="py-4 w-full bg-teal text-white">
         <div class="container mx-auto px-2">
-            <h2 class="text-center text-3xl mb-4">About Kelly</h2>
+            <h2 class="text-center text-4xl mb-4">About Kelly</h2>
             <div class="md:flex">
                 <div class="w-full md:w-1/2 md:mr-2 mb-4">
                     <img class="w-full" src="{{ URL::asset('img/about.jpg') }}" alt="">
