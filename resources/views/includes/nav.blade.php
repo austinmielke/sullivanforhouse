@@ -1,4 +1,4 @@
-<div class="w-full bg-white shadow fixed pin-x pin-t">
+<div class="w-full bg-white shadow fixed pin-x pin-t z-50">
     <div class="container mx-auto bg-white px-2 py-3">
         <div class="flex flex-col sm:flex-row items-start">
             <ul class="list-reset flex items-center justify-start">
