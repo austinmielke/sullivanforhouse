@@ -2,28 +2,31 @@
 
 @section('content')
 
-    <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
-            <img class="h-48 lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+    <div class="w-full m-auto">
+        @include('includes.messages')
     </div>
-    
+
+    <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
+        <img class="h-48 lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+    </div>
 
     <div class="py-4">
-            <h2 class="text-center text-3xl mb-4">My Vision</h2>
-            <div class="container mx-auto px-2 md:flex">
-                <div class="md:w-1/3">
-                    <img class="m-auto block h-48" src="{{ URL:: asset('img/handshake.svg') }}" alt="handshake">
-                    <p class="text-xl p-2 leading-normal">South Dakota deserves a state government that is willing to work together and collaborate on policy that represents all South Dakotans, not the personal or professional interests of politicians.</p>
-                </div>
-                <div class="md:w-1/3">
-                    <img class="m-auto block h-48" src="{{ URL:: asset('img/megaphone.svg') }}" alt="megaphone">
-                    <p class="text-xl p-2 leading-normal">We must elect leadership who stands up for freedom and liberty and allows all South Dakotans to pursue a life of happiness.</p>
-                </div>
-                <div class="md:w-1/3">
-                    <img class="m-auto block h-48" src="{{ URL:: asset('img/people.svg') }}" alt="people">
-                    <p class="text-xl p-2 leading-normal">We must build a future for our children by enacting social and economic policies that are forward-minded and will not only keep South Dakotans here, but will bring the best and brightest to our great state.</p>
-                </div>
+        <h2 class="text-center text-3xl mb-4">My Vision</h2>
+        <div class="container mx-auto px-2 md:flex">
+            <div class="md:w-1/3">
+                <img class="m-auto block h-48" src="{{ URL:: asset('img/handshake.svg') }}" alt="handshake">
+                <p class="text-xl p-2 leading-normal">South Dakota deserves a state government that is willing to work together and collaborate on policy that represents all South Dakotans, not the personal or professional interests of politicians.</p>
+            </div>
+            <div class="md:w-1/3">
+                <img class="m-auto block h-48" src="{{ URL:: asset('img/megaphone.svg') }}" alt="megaphone">
+                <p class="text-xl p-2 leading-normal">We must elect leadership who stands up for freedom and liberty and allows all South Dakotans to pursue a life of happiness.</p>
+            </div>
+            <div class="md:w-1/3">
+                <img class="m-auto block h-48" src="{{ URL:: asset('img/people.svg') }}" alt="people">
+                <p class="text-xl p-2 leading-normal">We must build a future for our children by enacting social and economic policies that are forward-minded and will not only keep South Dakotans here, but will bring the best and brightest to our great state.</p>
             </div>
         </div>
+    </div>
 
     <div class="py-4 w-full bg-teal text-white">
         <div class="container mx-auto px-2 md:w-3/4 lg:w-1/2 m-auto">
@@ -44,53 +47,50 @@
 
     <div class="py-4 w-full bg-teal text-white">
             <div class="container mx-auto px-2">
+
+                <div class="md:w-1/2 m-auto">
+                    @include('includes.errors')
+                </div>
+
                 <h2 class="text-center text-3xl">Join My Team</h2>
-                <form class="md:w-1/2 mb-4 m-auto" action="{{ url('contact') }}" method="POST">
+
+                <form id="form" class="md:w-1/2 mb-4 m-auto" action="{{ url('/') }}" method="POST">
                     {{ csrf_field() }}
     
                     <div class="my-6">
-                        <label for="name" class ="block my-2 font-bold font-xl">Name:</label>
-                        <input type="text" name="name" id="name" class="w-full h-10 p-2">
+                        <label for="name" class ="block my-2 font-bold text-xl">Name:</label>
+                        <input type="text" name="name" id="name" class="w-full h-10 p-2" value="{{ old('name') }}">
                     </div>
     
                     <div class="my-6">
-                        <label for="email" class="block my-2 font-bold font-xl">Email Address:</label>
-                        <input type="text" name="email" id="email" class="w-full h-10 p-2">
+                        <label for="email" class="block my-2 font-bold text-xl">Email Address:</label>
+                        <input type="text" name="email" id="email" class="w-full h-10 p-2" value="{{ old('email') }}">
                     </div>
     
                     <div class="my-6">
                         <fieldset>
+                            <legend class="my-2 font-bold text-xl">Interest(s):</legend>
                             <div class="mb-2">
-                                <input type="checkbox" id="donateTime" name="volunteer" value="Donate Time">
-                                <label class="font-bold font-xl" for="donateTime">Donate Your Time</label>
+                                <input type="checkbox" id="donateTime" name="interests[]" value="Donating Their Time">
+                                <label class="font-bold text-lg" for="donateTime">Donate Your Time</label>
                             </div>
 
                             <div class="mb-2">
-                                <input type="checkbox" id="yardSign" name="volunteer" value="newsletter">
-                                <label class="font-bold font-xl" for="yardSign">Request Yard Sign</label>
+                                <input type="checkbox" id="yardSign" name="interests[]" value="Requesting a Yard Sign">
+                                <label class="font-bold text-lg" for="yardSign">Request Yard Sign</label>
                             </div>
 
                             <div class="mb-2">
-                                <input type="checkbox" id="houseParty" name="volunteer" value="newsletter">
-                                <label class="font-bold font-xl" for="houseParty">Host A House Party</label>
+                                <input type="checkbox" id="houseParty" name="interests[]" value="Hosting a House Party">
+                                <label class="font-bold text-lg" for="houseParty">Host A House Party</label>
                             </div>
 
                             <div>
-                                <input type="checkbox" id="other" name="volunteer" value="newsletter">
-                                <label class="font-bold font-xl" for="other">Other</label>
+                                <input type="checkbox" id="other" name="interests[]" value="Other">
+                                <label class="font-bold text-lg" for="other">Other</label>
                             </div>
                         </fieldset>
                     </div>
-    
-                    @if (count($errors))
-                        <div class="my-6">
-                            <div class="alert alert-danger">
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                            </div>
-                        </div>
-                    @endif
     
                     <button class="btn btn-orange block m-auto">Submit</button>
     

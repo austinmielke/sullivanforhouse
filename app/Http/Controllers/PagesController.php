@@ -3,14 +3,34 @@
 namespace App\Http\Controllers;
 
 use App\Mail\Contact;
+use App\Mail\Volunteer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Validator;
 
 class PagesController extends Controller
 {
     
     public function getHome() {
         return view('pages.home');
+    }
+
+    public function postHome(Request $request) {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect('/#form')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+        Mail::to('kelly@kellysullivanforhouse.com')
+            ->send(new Volunteer($request));
+
+        return redirect('/')->with('success', 'Thank you, your message has been sent!');
     }
 
     public function getAbout() {
@@ -28,13 +48,6 @@ class PagesController extends Controller
             'subject' => 'required',
             'message' => 'required'
         ]);
-
-        // $data = [
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'subject' => $request->subject,
-        //     'msg' => $request->message
-        // ];
 
         Mail::to('kelly@kellysullivanforhouse.com')
             ->send(new Contact($request));
