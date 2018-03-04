@@ -22,7 +22,7 @@ class PagesController extends Controller
         ]);
     
         if ($validator->fails()) {
-            return redirect('/#form')
+            return redirect('/#errors')
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -42,12 +42,18 @@ class PagesController extends Controller
     }
 
     public function postContact(Request $request) {
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'required|email',
             'subject' => 'required',
             'message' => 'required'
         ]);
+    
+        if ($validator->fails()) {
+            return redirect('contact#errors')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
 
         Mail::to('kelly@kellysullivanforhouse.com')
             ->send(new Contact($request));
