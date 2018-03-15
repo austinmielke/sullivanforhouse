@@ -7,7 +7,7 @@
     </div>
 
     <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
-        <img class="h-48 lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+        <img class="md:h-48 xl:h-half lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
     </div>
 
     <div class="py-4">
@@ -37,13 +37,13 @@
         </div>
     </div>
 
-    <div class="py-4">
+    {{--  <div class="py-4">
         <div class="container mx-auto px-2 text-center md:w-1/3">
             <h2 class="text-center text-4xl my-2">How to Contribute</h2>
             <p class="my-2 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur natus voluptatem veritatis quisquam, nesciunt esse. </p>
             <a href="#" class="my-2 btn btn-orange inline-block">Contribute</a>
         </div>
-    </div>
+    </div>  --}}
 
     <div class="py-4 w-full bg-teal text-white">
             <div class="container mx-auto px-2">

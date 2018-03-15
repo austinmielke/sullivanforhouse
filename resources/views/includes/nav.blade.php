@@ -2,9 +2,9 @@
     <div class="container mx-auto bg-white px-2 py-3">
         <div class="flex flex-col sm:flex-row items-start">
             <ul class="list-reset flex items-center justify-start">
-                <li class="mr-3">
+                {{--  <li class="mr-3">
                     <a href="#" class="btn btn-orange">Contribute</a>
-                </li>
+                </li>  --}}
                 <li class="mr-3">
                     <a href="#" class="text-teal hover:text-teal-light"><i class="fab fa-facebook-square fa-2x"></i></a>
                 </li>
