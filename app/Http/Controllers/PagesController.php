@@ -27,7 +27,7 @@ class PagesController extends Controller
                         ->withInput();
         }
 
-        Mail::to('kelly@kellysullivanforhouse.com')
+        Mail::to('kelly@sullivanforhouse.com')
             ->send(new Volunteer($request));
 
         return redirect('/')->with('success', 'Thank you, your message has been sent!');
@@ -55,7 +55,7 @@ class PagesController extends Controller
                         ->withInput();
         }
 
-        Mail::to('kelly@kellysullivanforhouse.com')
+        Mail::to('kelly@sullivanforhouse.com')
             ->send(new Contact($request));
         
         return redirect('contact')->with('success', 'Thank you, your message has been sent!');
