@@ -7,7 +7,7 @@
     </div>
 
     <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
-        <img class="md:h-48 xl:h-half lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+        <img class="md:h-48 xl:h-half lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand1.svg') }}" alt="Kelly Sullivan for House District 13 2018">
     </div>
 
     <div class="py-4">
