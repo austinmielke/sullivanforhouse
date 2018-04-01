@@ -37,13 +37,13 @@
         </div>
     </div>
 
-    {{--  <div class="py-4">
+     <div class="py-4">
         <div class="container mx-auto px-2 text-center md:w-1/3">
             <h2 class="text-center text-4xl my-2">How to Contribute</h2>
-            <p class="my-2 text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur natus voluptatem veritatis quisquam, nesciunt esse. </p>
-            <a href="#" class="my-2 btn btn-orange inline-block">Contribute</a>
+            <p class="my-2 text-xl text-left">Thank you for investing in me! Your contribution is fueling my campaign, leading us toward a bright future. Together, we will affect positive change for South Dakota.</p>
+            <a href="https://secure.actblue.com/donate/sullivanforhouse" target="_blank" class="my-2 btn btn-orange inline-block">Contribute</a>
         </div>
-    </div>  --}}
+    </div> 
 
     <div class="py-4 w-full bg-teal text-white">
             <div class="container mx-auto px-2">
