@@ -9,10 +9,10 @@
                     <a href="https://www.facebook.com/sullivanforhouse/" target="_blank" class="text-teal hover:text-teal-light"><i class="fab fa-facebook-square fa-2x"></i></a>
                 </li>
                 <li class="mr-3">
-                    <a class="text-teal cursor-not-allowed"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.instagram.com/sullivanforhouse/" target="_blank" class="text-teal hover:text-teal-light"><i class="fab fa-instagram fa-2x"></i></a>
                 </li>
                 <li class="mr-3">
-                    <a class="text-teal cursor-not-allowed"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="https://twitter.com/hashtag605" target="_blank" class="text-teal hover:text-teal-light"><i class="fab fa-twitter-square fa-2x"></i></a>
                 </li>
             </ul>
         </div>

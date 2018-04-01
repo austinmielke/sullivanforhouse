@@ -14,15 +14,15 @@
         <h2 class="text-center text-4xl mb-4">My Vision</h2>
         <div class="container mx-auto px-2 md:flex">
             <div class="md:w-1/3">
-                <img class="m-auto block h-48" src="{{ URL:: asset('img/handshake.svg') }}" alt="handshake">
+                <img class="m-auto block h-32 lg:h-48" src="{{ URL:: asset('img/handshake.svg') }}" alt="handshake">
                 <p class="text-xl p-2 leading-normal">South Dakota deserves a state government that is willing to work together and collaborate on policy that represents all South Dakotans, not the personal or professional interests of politicians.</p>
             </div>
             <div class="md:w-1/3">
-                <img class="m-auto block h-48" src="{{ URL:: asset('img/megaphone.svg') }}" alt="megaphone">
+                <img class="m-auto block h-32 lg:h-48" src="{{ URL:: asset('img/megaphone.svg') }}" alt="megaphone">
                 <p class="text-xl p-2 leading-normal">We must elect leadership who stands up for freedom and liberty and allows all South Dakotans to pursue a life of happiness.</p>
             </div>
             <div class="md:w-1/3">
-                <img class="m-auto block h-48" src="{{ URL:: asset('img/people.svg') }}" alt="people">
+                <img class="m-auto block h-32 lg:h-48" src="{{ URL:: asset('img/people.svg') }}" alt="people">
                 <p class="text-xl p-2 leading-normal">We must build a future for our children by enacting social and economic policies that are forward-minded and will not only keep South Dakotans here, but will bring the best and brightest to our great state.</p>
             </div>
         </div>
