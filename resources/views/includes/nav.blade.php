@@ -33,7 +33,7 @@
                     <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <a href="#" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right">
+            <a href="/" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right">
 
                 @if(Request::is('/'))
 
