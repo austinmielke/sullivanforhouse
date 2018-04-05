@@ -19,7 +19,7 @@
             </div>
             <div class="md:w-1/3">
                 <img class="m-auto block h-32 lg:h-48" src="{{ URL:: asset('img/megaphone.svg') }}" alt="megaphone">
-                <p class="text-xl p-2 leading-normal">We must elect leadership who stands up for freedom and liberty and allows all South Dakotans to pursue a life of happiness.</p>
+                <p class="text-xl p-2 leading-normal">We must elect leaders who stand up for freedom and liberty and allows all South Dakotans to pursue a life of happiness.</p>
             </div>
             <div class="md:w-1/3">
                 <img class="m-auto block h-32 lg:h-48" src="{{ URL:: asset('img/people.svg') }}" alt="people">
