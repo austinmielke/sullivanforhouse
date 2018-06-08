@@ -50,11 +50,11 @@ let colors = {
   'gray': '#d1d1d1',
   'black': '#171717',
 
-  'orange': '#c25229',
-  'orange-light': "#c7613c",
+  'orange': '#c69047',
+  'orange-light': "#cb9a57",
 
-  'teal': '#007a7a',
-  'teal-light': '#459e9e'
+  'teal': '#007782',
+  'teal-light': '#17838d'
 }
 
 module.exports = {
@@ -438,6 +438,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '80': '20rem',
     'full': '100%',
     'half': '50vh',
     'three-quarters': '75vh',
