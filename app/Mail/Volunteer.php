@@ -24,7 +24,9 @@ class Volunteer extends Mailable
     {
         $this->name = $request->name;
         $this->email = $request->email;
-        $this->interests = $request->interests;
+        if ($request->interests) {
+            $this->interests = $request->interests;
+        } 
     }
 
     /**

@@ -10,9 +10,11 @@
     <p>{{ $name }} would like to volunteer!</p>
     <p>They have the following volunteer interest(s):</p>
     <ul>
-        @foreach ($interests as $interest)
-            <li>{{ $interest }}</li>
-        @endforeach
+        @if ($interests)
+            @foreach ($interests as $interest)
+                <li>{{ $interest }}</li>
+            @endforeach
+        @endif
     </ul>
 </body>
 </html>
