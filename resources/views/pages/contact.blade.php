@@ -22,23 +22,27 @@
                 {{ csrf_field() }}
 
                 <div class="my-6">
-                    <label for="name" class ="block my-2 font-bold font-xl">Name:</label>
+                    <label for="name" class ="block my-2 font-bold font-xl">Name *</label>
                     <input type="text" name="name" id="name" class="w-full h-10 p-2 rounded-lg" value="{{ old('name') }}">
                 </div>
 
                 <div class="my-6">
-                    <label for="email" class="block my-2 font-bold font-xl">Email Address:</label>
+                    <label for="email" class="block my-2 font-bold font-xl">Email Address *</label>
                     <input type="text" name="email" id="email" class="w-full h-10 p-2 rounded-lg" value="{{ old('email') }}">
                 </div>
 
                 <div class="my-6">
-                    <label for="subject" class="block my-2 font-bold font-xl">Subject:</label>
+                    <label for="subject" class="block my-2 font-bold font-xl">Subject *</label>
                     <input type="text" name="subject" id="subject" class="w-full h-10 p-2 rounded-lg" value="{{ old('subject') }}">
                 </div>
 
                 <div class="my-6">
-                    <label for="message" class="block my-2 font-bold font-xl">Message:</label>
+                    <label for="message" class="block my-2 font-bold font-xl">Message *</label>
                     <textarea type="text" name="message" id="message" class="w-full h-48 p-2 rounded-lg">{{ old('message') }}</textarea>
+                </div>
+
+                <div class="my-6">
+                    <p class="text-italic"><em>* Denotes Required Field</em></p>
                 </div>
 
                 <button class="btn btn-orange block m-auto">Submit</button>
