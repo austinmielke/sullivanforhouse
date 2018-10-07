@@ -33,15 +33,19 @@
                     <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <a href="/" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-0 md:text-right">
+            <a href="/" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-4 md:text-right no-underline">
 
                 @if(Request::is('/'))
 
                     <img class="h-48 lg:h-64 md:hidden"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+                    <h1 class="uppercase text-teal text-center lg:text-4xl text-2xl md:hidden">Stand up. Engage.</h1>
+                    <h1 class= "uppercase text-teal text-center lg:text-4xl text-2xl md:hidden">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
 
                 @else
 
                     <img class="h-48 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+                    <h1 class="uppercase text-center md:text-right text-teal mt-4 lg:text-4xl text-2xl">Stand up. Engage.</h1>
+                    <h1 class= "uppercase text-center md:text-right text-teal lg:text-4xl text-2xl">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
 
                 @endif
 

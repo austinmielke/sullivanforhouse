@@ -30,43 +30,43 @@
  */
 
 .btn {
-    @apply .px-4 .py-2 .font-bold .text-white .no-underline .rounded-lg;
+  @apply .px-4 .py-2 .font-bold .text-white .no-underline .rounded-lg;
 }
 
 .btn-lg {
-    @apply .px-6 .py-4 .text-xl;
+  @apply .px-6 .py-4 .text-xl;
 }
 
 .btn-orange {
-    @apply .bg-orange;
+  @apply .bg-orange;
 }
 
 .btn-orange:hover {
-    @apply .bg-orange-light;
+  @apply .bg-orange-light;
 }
 
 .btn-teal {
-    @apply .bg-teal;
+  @apply .bg-teal;
 }
 
 .btn-teal:hover {
-    @apply .bg-teal-light;
+  @apply .bg-teal-light;
 }
 
 .form-label {
-    @apply .block .my-2 .font-bold;
+  @apply .block .my-2 .font-bold;
 }
 
 .nav-link {
-    @apply .text-teal .no-underline .text-3xl .uppercase .font-bold;
+  @apply .text-teal .no-underline .text-3xl .uppercase .font-bold;
 }
 
 .nav-link:hover {
-    @apply .text-teal-light
+  @apply .text-teal-light;
 }
 
 .splash-bg {
-    background-image: url('/img/splash.jpg');
+  background-image: url("/img/splash-2.jpg");
 }
 
 @tailwind utilities;

@@ -8,8 +8,8 @@
         <div class="container mx-auto px-2">
             <h2 class="text-center text-4xl mb-4">Get to Know Kelly</h2>
             <div class="md:flex">
-                <div class="w-full md:w-1/2 md:mr-2 mb-4">
-                    <img class="w-full" src="{{ URL::asset('img/about.jpg') }}" alt="">
+                <div class="mx-auto w-2/3 md:w-1/2 md:mr-2 mb-4">
+                    <img class="w-full" src="{{ URL::asset('img/about-2.jpg') }}" alt="">
                 </div>
 
                 <div class="w-full md:w-1/2 md:ml-2 mb-4">

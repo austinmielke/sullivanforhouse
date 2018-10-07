@@ -7,17 +7,16 @@
     </div>
 
     <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
-        <img class="md:h-48 xl:h-80 lg:h-64 invisible md:visible mr-12 lg:mr-16"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+        <div class="mr-8 p-4">
+            <img class="md:h-48 xl:h-80 lg:h-64 invisible md:visible"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
+            <h1 class="uppercase text-teal mt-4 leading-loose lg:text-4xl text-2xl invisible md:visible">Stand up. Engage.</h1>
+            <h1 class= "uppercase text-teal leading-loose lg:text-4xl text-2xl invisible md:visible">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
+        </div>
     </div>
 
     <div class="py-4">
         <h2 class="text-center text-4xl mb-4">My Vision</h2>
         <div class="container mx-auto px-2 md:flex">
-                <div class="md:w-1/3">
-                    <img class="m-auto block h-32 lg:h-48 p-2" src="{{ URL:: asset('img/equal.svg') }}" alt="an equal sign">
-                    <h3 class="text-center text-2xl p-2">Equality</h3>
-                    <p class="text-xl p-2 leading-normal">All South Dakotans deserve to have equal rights and dignity. I will stand strong and be the voice in Pierre, fighting for LGBTQ equality and I will stand up for immigrants, Muslims, refugees, Native Americans, women, people of color, people with disabilities, our elderly and aging population, and beyond. I believe that South Dakota must be represented equally and be inclusive of those whose voices have been silenced. I will stand up for you, South Dakota.</p>
-                </div>
             <div class="md:w-1/3">
                 <img class="m-auto block h-32 lg:h-48 p-2" src="{{ URL:: asset('img/open-book.svg') }}" alt="an open book">
                 <h3 class="text-center text-2xl p-2">Education</h3>
@@ -27,6 +26,11 @@
                 <img class="m-auto block h-32 lg:h-48 p-2" src="{{ URL:: asset('img/piggy-bank.svg') }}" alt="a piggy bank">
                 <h3 class="text-center text-2xl p-2">Economic Opportunity</h3>
                 <p class="text-xl p-2 leading-normal">As South Dakota continues to grow, we must find ways to allow ALL South Dakotans to thrive. We must shift our government to be open and transparent, ensuring your hard-earned tax-dollars are spent wisely, with all South Dakotans as the number one priority. We must pay a living wage so South Dakotans can support themselves and their families. We must attract innovative companies to South Dakota to ensure stable jobs and continuing economic growth.</p>
+            </div>
+            <div class="md:w-1/3">
+                <img class="m-auto block h-32 lg:h-48 p-2" src="{{ URL:: asset('img/equal.svg') }}" alt="an equal sign">
+                <h3 class="text-center text-2xl p-2">Equality</h3>
+                <p class="text-xl p-2 leading-normal">All South Dakotans deserve to have equal rights and dignity. I will stand strong and be the voice in Pierre, fighting for LGBTQ equality and I will stand up for immigrants, Muslims, refugees, Native Americans, women, people of color, people with disabilities, our elderly and aging population, and beyond. I believe that South Dakota must be represented equally and be inclusive of those whose voices have been silenced. I will stand up for you, South Dakota.</p>
             </div>
         </div>
     </div>
