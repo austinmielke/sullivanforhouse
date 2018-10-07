@@ -37,15 +37,15 @@
 
                 @if(Request::is('/'))
 
-                    <img class="h-48 lg:h-64 md:hidden"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
-                    <h1 class="uppercase text-teal text-center lg:text-4xl text-2xl md:hidden">Stand up. Engage.</h1>
-                    <h1 class= "uppercase text-teal text-center lg:text-4xl text-2xl md:hidden">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
+                    <h1 class="uppercase text-orange text-center text-4xl md:hidden">Stand up. Engage.</h1>
+                    <h1 class= "uppercase text-orange text-center text-4xl md:hidden mb-2">For <span class="border-b-2 border-orange">all</span> South Dakotans.</h1>
+                    <img class="h-48 lg:h-64 md:hidden mx-auto block"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
 
                 @else
 
-                    <img class="h-48 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
-                    <h1 class="uppercase text-center md:text-right text-teal mt-4 lg:text-4xl text-2xl">Stand up. Engage.</h1>
-                    <h1 class= "uppercase text-center md:text-right text-teal lg:text-4xl text-2xl">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
+                    <h1 class="uppercase text-center md:text-right text-orange mt-4 lg:text-4xl text-2xl">Stand up. Engage.</h1>
+                    <h1 class= "uppercase text-center md:text-right text-orange lg:text-4xl text-2xl mb-2">For <span class="border-b-2 border-orange">all</span> South Dakotans.</h1>
+                    <img class="h-48 lg:h-64 mx-auto block md:mr-0 md:ml-auto" src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
 
                 @endif
 

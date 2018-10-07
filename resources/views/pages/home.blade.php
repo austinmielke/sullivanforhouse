@@ -6,11 +6,14 @@
         @include('includes.messages')
     </div>
 
-    <div class="w-full bg-teal h-half lg:h-three-quarters splash-bg bg-cover relative flex items-center justify-end">
-        <div class="mr-8 p-4">
+    <div class="w-full h-half lg:h-three-quarters bg-orange flex flex-col md:flex-row overflow-hidden">
+        <div class="w-full md:w-1/2">
+            <img class="w-full" src="{{ URL::asset('img/splash-2.jpg') }}" alt="Kelly Sullivan">
+        </div>
+        <div class="w-full md:w-1/2 p-4 flex flex-col justify-center items-center">
+            <h1 class="uppercase text-center text-white leading-loose md:text-4xl lg:text-5xl xl:text-6xl text-3xl invisible md:visible">Stand up. Engage.</h1>
+            <h1 class= "uppercase text-center text-white mb-4 leading-loose md:text-4xl lg:text-5xl xl:text-6xl text-3xl invisible md:visible">For <span class="border-b-2 border-white">all</span> South Dakotans.</h1>
             <img class="md:h-48 xl:h-80 lg:h-64 invisible md:visible"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
-            <h1 class="uppercase text-teal mt-4 leading-loose lg:text-4xl text-2xl invisible md:visible">Stand up. Engage.</h1>
-            <h1 class= "uppercase text-teal leading-loose lg:text-4xl text-2xl invisible md:visible">For <span class="border-b-2 border-teal">all</span> South Dakotans.</h1>
         </div>
     </div>
 
