@@ -11,8 +11,7 @@
             <img class="w-full" src="{{ URL::asset('img/splash-2.jpg') }}" alt="Kelly Sullivan">
         </div>
         <div class="w-full md:w-1/2 p-4 flex flex-col justify-center items-center">
-            <h1 class="uppercase text-center text-white leading-loose md:text-4xl lg:text-5xl xl:text-6xl text-3xl invisible md:visible">Stand up. Engage.</h1>
-            <h1 class= "uppercase text-center text-white mb-4 leading-loose md:text-4xl lg:text-5xl xl:text-6xl text-3xl invisible md:visible">For <span class="border-b-2 border-white">all</span> South Dakotans.</h1>
+            <h1 class="uppercase text-center text-white leading-loose md:text-2xl lg:text-3xl xl:text-4xl text-3xl invisible md:visible">Thank you for your support, Sioux Falls. This isn’t defeat if we continue standing up and using our voices!</h1>
             <img class="md:h-48 xl:h-80 lg:h-64 invisible md:visible"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
         </div>
     </div>
