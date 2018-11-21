@@ -15,24 +15,6 @@ class PagesController extends Controller
         return view('pages.home');
     }
 
-    public function postHome(Request $request) {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required',
-            'email' => 'required|email',
-        ]);
-    
-        if ($validator->fails()) {
-            return redirect('/#errors')
-                        ->withErrors($validator)
-                        ->withInput();
-        }
-
-        Mail::to('kelly@sullivanforhouse.com')
-            ->send(new Volunteer($request));
-
-        return redirect('/')->with('success', 'Thank you, your message has been sent!');
-    }
-
     public function getAbout() {
         return view('pages.about');
     }
