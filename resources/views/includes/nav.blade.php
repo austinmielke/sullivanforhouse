@@ -33,12 +33,9 @@
                     <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <a href="/" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-4 md:text-right no-underline">
+
 
                 @if(Request::is('/'))
-
-                    <h1 class="uppercase text-orange text-center text-2xl md:hidden mb-4">Thank you, Sioux Falls! I promise to be your voice in Pierre and will stand up for all of District 13.</h1>
-                    <img class="h-48 lg:h-64 md:hidden mx-auto block"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
 
                 @else
 

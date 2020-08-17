@@ -12,7 +12,7 @@
         <div class="container mx-auto px-2">
 
             <h2 class="text-center text-4xl mb-4">Let's Talk!</h2>
-            <p class="md:w-1/2 m-auto text-xl leading-normal">As a citizen-run legislature, I believe South Dakotans should be able to openly speak to the people they elected to represent them. As your future District 13 Representative, I'd love to hear from you! Whether you'd like to talk about your concerns, volunteer for the campaign, or host an event, I'm here for you, South Dakota.</p>
+            <p class="md:w-1/2 m-auto text-xl leading-normal">As a citizen-run legislature, I believe South Dakotans should be able to openly speak to the people they elected to represent them. As your District 13 Representative, I'd love to hear from you! Whether you'd like to talk about your concerns, volunteer for the campaign, or host an event, I'm here for you, South Dakota.</p>
             
             <div class="md:w-1/2 m-auto">
                 @include('includes.errors')
