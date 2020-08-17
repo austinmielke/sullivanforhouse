@@ -33,19 +33,17 @@
                     <a href="/contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-
-
+            
                 @if(Request::is('/'))
 
                 @else
-
+                <a href="/" class="mx-auto my-6 md:ml-auto md:mr-0 md:my-4 md:text-right no-underline">
                     <h1 class="uppercase text-center md:text-right text-orange mt-4 lg:text-4xl text-2xl">Stand up. Engage.</h1>
                     <h1 class= "uppercase text-center md:text-right text-orange lg:text-4xl text-2xl mb-2">For <span class="border-b-2 border-orange">all</span> South Dakotans.</h1>
                     <img class="h-48 lg:h-64 mx-auto block md:mr-0 md:ml-auto" src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
-
+                </a>
                 @endif
 
-            </a>
         </div>
     </div>
 </nav>
