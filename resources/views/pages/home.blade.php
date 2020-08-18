@@ -22,9 +22,6 @@
                 <li class="lg:m-8 md:m-4 m-8">
                     <a href="https://secure.actblue.com/donate/sullivanforhouse?amount=25" target="_blank" class="lg:px-8 md:px-4 px-8 lg:py-4 md:py-2 py-4 font-bold text-white no-underline rounded-lg bg-teal">$25</a>
                 </li>
-                <li class="lg:m-8 md:m-4 m-8">
-                    <a href="https://secure.actblue.com/donate/sullivanforhouse?amount=50" target="_blank" class="lg:px-8 md:px-4 px-8 lg:py-4 md:py-2 py-4 font-bold text-white no-underline rounded-lg bg-teal">$50</a>
-                </li>
             </ul>
             <div class="flex-grow lg:m-8 md:m-4 m-8">
                 <a href="https://secure.actblue.com/donate/sullivanforhouse" target="_blank" class="lg:px-8 md:px-4 px-8 lg:py-4 md:py-2 py-4 font-bold text-white no-underline rounded-lg bg-teal">Other Amount</a>
