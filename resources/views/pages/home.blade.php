@@ -6,14 +6,16 @@
         @include('includes.messages')
     </div>
 
-    <div class="w-full md:h-half lg:h-three-quarters bg-orange flex flex-col-reverse md:flex-row overflow-hidden">
+    <div class="w-full lg:h-three-quarters bg-orange flex flex-col-reverse md:flex-row overflow-hidden">
         <div class="h-half md:h-auto w-full md:w-1/2 overflow-hidden md:overflow-visible">
-            <img src="{{ URL::asset('img/splash-2.jpg') }}" alt="Kelly Sullivan">
+            <img class="-mb-8" src="{{ URL::asset('img/splash-2.jpg') }}" alt="Kelly Sullivan">
         </div>
-        <div class="w-full md:w-1/2 p-8 flex flex-col justify-center items-center">
-            <img class="md:h-48 xl:h-80 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Kelly Sullivan for House District 13 2018">
-            <h2 class="pt-8 uppercase text-center text-white leading-loose md:text-2xl lg:text-3xl xl:text-4xl text-3xl">Contribute</h2>
-            <ul class="list-reset pt-4 flex flex-wrap justify-around items-center xl:flex-row flex-col">
+        <div class="w-full md:w-1/2 lg:p-8 p-4 flex flex-col justify-center items-center">
+            <h4 class="text-center text-white text-xl lg:px-8 pb-4">I am running for re-election for the State House of Representatives because I am committed to continuing to be a strong voice that stands up for <span class="underline">YOU</span>!</h4>
+            <h2 class="pt-8 -m-4 uppercase text-center text-white leading-loose md:text-2xl lg:text-3xl xl:text-4xl md:text-3xl text-4xl">Re-Elect</h2>
+            <img class="md:h-48 xl:h-80 lg:h-64"src="{{ URL::asset('img/brand.svg') }}" alt="Re-Elect Kelly Sullivan for House District 13 2020">
+            <h2 class="pt-4 uppercase text-center text-white leading-loose md:text-2xl lg:text-3xl xl:text-4xl text-3xl">Contribute</h2>
+            <ul class="list-reset pt-4 flex flex-wrap justify-around items-center xl:flex-row sm:flex-row flex-col">
                 <li class="lg:m-8 md:m-4 m-8">
                     <a href="https://secure.actblue.com/donate/sullivanforhouse?amount=10" target="_blank" class="lg:px-8 md:px-4 px-8 lg:py-4 md:py-2 py-4 font-bold text-white no-underline rounded-lg bg-teal">$10</a>
                 </li>

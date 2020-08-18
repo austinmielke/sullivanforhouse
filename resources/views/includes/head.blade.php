@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Kelly Sullivan for House 2018 @yield('title')</title>
+<title>Re-Elect Kelly Sullivan for House 2020 @yield('title')</title>
 
 <meta name=”description” content="Kelly is running for the SD House of Representatives, because she believes the people of District 13 need a strong voice that is willing to stand up and engage.">
 
