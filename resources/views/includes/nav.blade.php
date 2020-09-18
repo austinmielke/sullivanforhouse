@@ -22,7 +22,7 @@
 <nav class="w-full bg-white">
     <div class="container mx-auto mt-12 px-2">
         <div class="flex flex-col items-start md:flex-row ">
-            <ul class="list-reset flex-col mx-auto sm:mx-0 text-center sm:flex-row flex align-center mb-4">
+            <ul class="list-reset flex-col mx-auto md:mx-0 text-center md:flex-row flex align-center mb-4">
                 <li class="mx-2">
                     <a href="/" class="nav-link">Home</a>
                 </li>
@@ -32,6 +32,10 @@
                 <li class="mx-2">
                     <a href="/contact" class="nav-link">Contact</a>
                 </li>
+                <li class="flex-auto mt-2 mr-3">
+                    <a href="https://sdsos.gov/elections-voting/assets/AbsenteeBallotApplicationFillable.pdf" target="_blank" class="btn btn-orange">Absentee Ballot Application
+                    </a>
+                </li> 
             </ul>
             
                 @if(Request::is('/'))
